@@ -1,7 +1,9 @@
-# Ignora scripts e arquivos de configuração JSON pesados
-*.sh linguist-vendored=true
-*.json linguist-vendored=true
+# Esconde scripts e arquivos de configuração
+*.sh linguist-vendored
+*.json linguist-vendored
+package.json linguist-vendored
+yarn.lock linguist-vendored
 
-# Força o reconhecimento absoluto do JavaScript
-**/*.js linguist-detectable=true
-**/*.js linguist-language=JavaScript
+# Força o JS a ser a estrela
+*.js linguist-detectable
+*.js linguist-language=JavaScript
